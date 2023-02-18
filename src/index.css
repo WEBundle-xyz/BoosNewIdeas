@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
 
 :root {
   /* primary */
@@ -31,35 +31,40 @@
   --mainBackground: #000000;
   --mainTitle: #232129;
   --mainText: #ffffff;
-  	/* Section 1 */
-	--mainBackgroundLightS1: #ffffff;
-	--mainBackgroundDarkS1: #ffffff;
+  /* Section 1 */
+  --mainBackgroundLightS1: #b0bec5;
+  --mainBackgroundDarkS1: #263238;
   /* Fonts */
-  --mainFont: 'Inconsolata', monospace;
+  --mainFont: 'Source Code Pro', monospace;
   --defaultFontSize: 100%;
+
+  /* Post Colors */
+  --postsBackgroundColor: #635e69;
+  --postsBorderColor: #635e69;
+  --authorColor: #ff8885;
+  --postColor: #d9d7e0;
+  /* Form Colors */
+  --formBackgroundColors: #635e69;
+  --formLabelColor: #e0f2f1;
+  --formInputArea: #f5f5f5;
+  --formInputTextArea: #000000;
 }
 
 /* Main App */
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: var(--mainFont);
-
 }
 
-html {
-  margin: 0;
-  padding: 0;
+:root {
+  min-height: 100vh;
   font-family: var(--mainFont);
   font-size: var(--defaultFontSize);
-  /* background-image: radial-gradient(
+  background-image: radial-gradient(
     circle,
     var(--mainBackgroundLightS1) 0%,
     var(--mainBackgroundDarkS1) 100%
-  ); */
-  background-color: var(--mainBackground);
+  );
   min-height: 100vh;
   line-height: 24px;
   font-weight: 400;
@@ -72,7 +77,6 @@ html {
 
 body {
   margin: 0;
-  padding: 2rem;
   text-align: center;
   color: var(--mainTitle);
 }

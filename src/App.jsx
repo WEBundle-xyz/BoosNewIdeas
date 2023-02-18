@@ -1,11 +1,10 @@
-import MainHeader from './components/header/MainHeader';
-import MainBody from './components/body/ MainBody';
+import Post from './components/Post';
 
 function App() {
   return (
     <main>
-      <MainHeader />
-      <MainBody />
+      <Post author='Stef' body='This is awesome' />
+      <Post author='Jackie' body='This something cool' />
     </main>
   );
 }
