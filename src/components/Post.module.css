@@ -24,6 +24,13 @@
   font-style: italic;
 }
 
+@media (min-width: 40rem) {
+  .post {
+    margin: 3rem;
+    padding: 0;
+  }
+}
+
 @keyframes animate-in {
   from {
     opacity: 0;
